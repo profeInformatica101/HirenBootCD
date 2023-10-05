@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Resultados de Diagnóstico de Computadora</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Aplicaciones de Hiren's BootCD</h1>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Componente</th>
+                    <th scope="col">Herramienta Utilizada</th>
+                    <th scope="col">Path donde encontrarla</th>
+                    <th scope="col">Descripción de uso de la herramienta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CPU</td>
+                    <td>CPU-Z</td>
+                    <td>HBCD Menu -> Programs -> System Information -> CPU-Z</td>
+                    <td>Proporciona información detallada sobre el procesador, incluyendo velocidad, núcleos, etc.</td>
+                </tr>
+                <tr>
+                    <td>Memoria RAM</td>
+                    <td>Memtest86+</td>
+                    <td>En la pantalla de inicio de Hiren’s BootCD</td>
+                    <td>Realiza un test exhaustivo sobre la memoria RAM para detectar posibles errores.</td>
+                </tr>
+                <tr>
+                    <td>Disco Duro/SSD</td>
+                    <td>CrystalDiskInfo</td>
+                    <td>HBCD Menu -> Programs -> Hard Disk/Storage -> CrystalDiskInfo</td>
+                    <td>Exhibe el estado de salud y otras informaciones sobre el disco duro/SSD.</td>
+                </tr>
+                <tr>
+                    <td>Tarjeta Madre (Motherboard)</td>
+                    <td>Speccy</td>
+                    <td>HBCD Menu -> Programs -> System Information -> Speccy</td>
+                    <td>Muestra información detallada sobre el hardware del equipo.</td>
+                </tr>
+                <tr>
+                    <td>Tarjetas de Video</td>
+                    <td>GPU-Z</td>
+                    <td>HBCD Menu -> Programs -> System Information -> GPU-Z</td>
+                    <td>Ofrece detallada información acerca de la tarjeta de video, como modelo y capacidad de VRAM.</td>
+                </tr>
+                <tr>
+                    <td>Dispositivos de Red</td>
+                    <td>Angry IP Scanner</td>
+                    <td>HBCD Menu -> Programs -> Network -> Angry IP Scanner</td>
+                    <td>Escanea IP y puertos en la red.</td>
+                </tr>
+                <tr>
+                    <td>Unidades Ópticas (CD/DVD/Blu-Ray)</td>
+                    <td>Speccy</td>
+                    <td>HBCD Menu -> Programs -> System Information -> Speccy</td>
+                    <td>Proporciona información sobre unidades ópticas y otros componentes.</td>
+                </tr>
+                <tr>
+                    <td>Periféricos</td>
+                    <td>USBDeview</td>
+                    <td>HBCD Menu -> Programs -> System Information -> USBDeview</td>
+                    <td>Muestra una lista de todos los dispositivos USB conectados.</td>
+                </tr>
+                <tr>
+                    <td>Fuente de Poder</td>
+                    <td>HWMonitor</td>
+                    <td>HBCD Menu -> Programs -> System Information -> HWMonitor</td>
+                    <td>Monitorea los principales indicadores de los componentes del PC, como temperatura y velocidad de los ventiladores.</td>
+                </tr>
+                <tr>
+                    <td>Sistema de Enfriamiento</td>
+                    <td>SpeedFan</td>
+                    <td>HBCD Menu -> Programs -> System Information -> SpeedFan</td>
+                    <td>Monitoriza voltajes, temperaturas y ventiladores en el sistema.</td>
+                </tr>
+                <tr>
+                    <td>Puertos y Conexiones</td>
+                    <td>Device Manager</td>
+                    <td>Mini Windows -> Control Panel -> Device Manager</td>
+                    <td>Gestiona y muestra información sobre hardware conectado al sistema.</td>
+                </tr>
+                <tr>
+                    <td>Sonido</td>
+                    <td>Speccy</td>
+                    <td>HBCD Menu -> Programs -> System Information -> Speccy</td>
+                    <td>Muestra información detallada del sistema, incluyendo sobre dispositivos de audio.</td>
+                </tr>
+                <tr>
+                    <td>Batería (En Laptops)</td>
+                    <td>BatteryInfoView</td>
+                    <td>HBCD Menu -> Programs -> System Information -> BatteryInfoView</td>
+                    <td>Despliega información acerca del estado de la batería de portátiles.</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div class="container mt-5">
+            <h1 class="mb-4">Información del Sistema</h1>
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Componente</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- CPU -->
+    <tr>
+        <td rowspan="4">CPU</td>
+        <td>Velocidad de reloj (Clock Speed)</td>
+        <td>La velocidad a la que el procesador ejecuta las instrucciones.</td>
+    </tr>
+    <tr>
+        <td>Número de núcleos y threads</td>
+        <td>Indica la cantidad de núcleos y subprocesos que puede manejar el procesador simultáneamente.</td>
+    </tr>
+    <tr>
+        <td>Temperaturas del procesador</td>
+        <td>Medición actual de la temperatura del procesador en grados Celsius.</td>
+    </tr>
+    <tr>
+        <td>Uso del procesador (%)</td>
+        <td>Porcentaje del poder de procesamiento que está siendo utilizado.</td>
+    </tr>
+
+    <!-- Memoria RAM -->
+    <tr>
+        <td rowspan="4">Memoria RAM</td>
+        <td>Capacidad total y utilizada</td>
+        <td>Total de memoria RAM disponible y cuánto está en uso actualmente.</td>
+    </tr>
+    <tr>
+        <td>Velocidad de la memoria</td>
+        <td>Velocidad a la que la memoria RAM puede leer/escribir datos.</td>
+    </tr>
+    <tr>
+        <td>Tipo de memoria</td>
+        <td>Tipo de módulo de memoria RAM utilizado (ej. DDR4).</td>
+    </tr>
+    <tr>
+        <td>Número de slots y cuántos están en uso</td>
+        <td>Cantidad de ranuras para memoria RAM en la placa madre y cuántas están siendo utilizadas.</td>
+    </tr>
+                  <!-- Disco Duro/SSD -->
+<tr>
+    <td rowspan="4">Disco Duro/SSD</td>
+    <td>Capacidad de almacenamiento total y disponible</td>
+    <td>La cantidad total de espacio de almacenamiento en el disco y cuánto de este espacio está actualmente disponible o libre para uso.</td>
+</tr>
+<tr>
+    <td>Velocidad de lectura y escritura</td>
+    <td>La velocidad a la que el disco puede leer y escribir datos, generalmente medida en MB/s.</td>
+</tr>
+<tr>
+    <td>Salud del disco (SMART Status)</td>
+    <td>Indica la salud general del disco utilizando la tecnología SMART para prever posibles fallos.</td>
+</tr>
+<tr>
+    <td>Temperaturas del disco</td>
+    <td>Medición actual de la temperatura del disco en grados Celsius.</td>
+</tr>
+
+<!-- Tarjeta Madre (Motherboard) -->
+<tr>
+    <td rowspan="4">Tarjeta Madre (Motherboard)</td>
+    <td>Modelo y fabricante</td>
+    <td>El fabricante y el modelo específico de la tarjeta madre instalada en el sistema.</td>
+</tr>
+<tr>
+    <td>Versiones de BIOS/UEFI</td>
+    <td>La versión del firmware BIOS o UEFI que se está utilizando actualmente.</td>
+</tr>
+<tr>
+    <td>Slots disponibles (PCI, RAM, etc.)</td>
+    <td>Los slots de expansión disponibles y/o en uso, como PCI, PCI-Express y ranuras de memoria RAM.</td>
+</tr>
+<tr>
+    <td>Chipset</td>
+    <td>El modelo y fabricante del chipset de la tarjeta madre.</td>
+</tr>
+
+<!-- Tarjetas de Video -->
+<tr>
+    <td rowspan="5">Tarjetas de Video</td>
+    <td>Modelo y fabricante</td>
+    <td>El fabricante y el modelo específico de la tarjeta de video.</td>
+</tr>
+<tr>
+    <td>Capacidad y uso de VRAM</td>
+    <td>La cantidad total de VRAM (memoria de video) y cuánto de esta está en uso.</td>
+</tr>
+<tr>
+    <td>Temperaturas de la GPU</td>
+    <td>Medición actual de la temperatura de la GPU (unidad de procesamiento gráfico) en grados Celsius.</td>
+</tr>
+<tr>
+    <td>Velocidad de reloj de la GPU y la memoria</td>
+    <td>La velocidad a la que operan el GPU y la memoria de video.</td>
+</tr>
+<tr>
+    <td>Drivers instalados</td>
+    <td>La versión de los drivers de la tarjeta gráfica que está instalada.</td>
+</tr>
+<!-- Dispositivos de Red -->
+<tr>
+    <td rowspan="4">Dispositivos de Red</td>
+    <td>Velocidad de conexión</td>
+    <td>La velocidad máxima de conexión de la red, a menudo medida en Mbps o Gbps.</td>
+</tr>
+<tr>
+    <td>Paquetes enviados/recibidos</td>
+    <td>Número de paquetes de datos que han sido enviados y recibidos por el adaptador de red.</td>
+</tr>
+<tr>
+    <td>Configuración IP y MAC Address</td>
+    <td>Las direcciones IP y MAC asignadas al dispositivo de red.</td>
+</tr>
+<tr>
+    <td>Tipo de conexión</td>
+    <td>El tipo de conexión de red (por ejemplo, Ethernet, Wi-Fi) y el estándar utilizado (por ejemplo, 802.11ac).</td>
+</tr>
+
+<!-- Unidades Ópticas (CD/DVD/Blu-Ray) -->
+<tr>
+    <td rowspan="3">Unidades Ópticas</td>
+    <td>Tipo y velocidad de lectura/escritura</td>
+    <td>El tipo de unidad óptica y las velocidades máximas de lectura y escritura de discos.</td>
+</tr>
+<tr>
+    <td>Accesibilidad y capacidad de lectura</td>
+    <td>Verificación de si la unidad óptica puede acceder y leer discos correctamente.</td>
+</tr>
+<tr>
+    <td>Formatos soportados</td>
+    <td>Los formatos de discos que la unidad puede leer y/o escribir (por ejemplo, CD-R, DVD+R, etc.).</td>
+</tr>
+
+<!-- Periféricos -->
+<tr>
+    <td rowspan="3">Periféricos</td>
+    <td>Listado de dispositivos conectados</td>
+    <td>Lista de dispositivos periféricos conectados, como teclado, ratón, impresora, etc.</td>
+</tr>
+<tr>
+    <td>Tipo de conexión</td>
+    <td>El tipo de conexión utilizada por los periféricos, como USB 2.0, USB 3.0, Bluetooth, etc.</td>
+</tr>
+<tr>
+    <td>Estado del dispositivo</td>
+    <td>Indicador del estado actual de los dispositivos periféricos (conectado, desconectado, etc.).</td>
+</tr>
+<!-- Fuente de Poder -->
+<tr>
+    <td rowspan="2">Fuente de Poder</td>
+    <td>Voltajes suministrados</td>
+    <td>Los voltajes que la fuente de poder está suministrando a los diferentes componentes del sistema. Pueden requerir hardware específico para medir de manera precisa.</td>
+</tr>
+<tr>
+    <td>Estabilidad de los voltajes</td>
+    <td>Verificar que los voltajes suministrados a los componentes estén dentro de los rangos aceptables y sean estables.</td>
+</tr>
+
+<!-- Sistema de Enfriamiento -->
+<tr>
+    <td rowspan="2">Sistema de Enfriamiento</td>
+    <td>Velocidades del ventilador</td>
+    <td>La velocidad a la que los ventiladores del sistema están funcionando, generalmente medida en RPM (revoluciones por minuto).</td>
+</tr>
+<tr>
+    <td>Temperaturas de diversos componentes</td>
+    <td>Las temperaturas actuales de diversos componentes clave como la CPU, GPU, y disco duro.</td>
+</tr>
+
+<!-- Puertos y Conexiones -->
+<tr>
+    <td rowspan="2">Puertos y Conexiones</td>
+    <td>Listado de puertos disponibles y en uso</td>
+    <td>Identificación y estado (ocupado/disponible) de los puertos físicos en la máquina, como USB, HDMI, etc.</td>
+</tr>
+<tr>
+    <td>Identificación de dispositivos conectados</td>
+    <td>Descripción de los dispositivos que están conectados a los puertos de la máquina.</td>
+</tr>
+
+<!-- Sonido -->
+<tr>
+    <td rowspan="2">Sonido</td>
+    <td>Dispositivos de audio conectados</td>
+    <td>Un listado de dispositivos de audio conectados, como altavoces, micrófonos, y auriculares.</td>
+</tr>
+<tr>
+    <td>Configuraciones de los dispositivos de sonido</td>
+    <td>Los ajustes actuales de los dispositivos de audio, incluyendo volumen, balance, etc.</td>
+</tr>
+
+<!-- Batería (En Laptops) -->
+<tr>
+    <td rowspan="3">Batería (En Laptops)</td>
+    <td>Niveles de carga</td>
+    <td>El porcentaje actual de carga de la batería y la estimación de la duración restante.</td>
+</tr>
+<tr>
+    <td>Salud de la batería</td>
+    <td>Una evaluación de la capacidad de la batería comparada con su capacidad cuando era nueva, y el número de ciclos de carga.</td>
+</tr>
+<tr>
+    <td>Ciclos de carga</td>
+    <td>Número de ciclos de carga que la batería ha experimentado a lo largo de su vida útil.</td>
+</tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
